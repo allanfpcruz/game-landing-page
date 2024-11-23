@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!--Google Fonts-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Londrina+Shadow&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+  <!--BoxIcons-->
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <!--SwiperJS-->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <!--CSS-->
+  <link rel="stylesheet" href="estilo/style.css">
+  <link rel="stylesheet" href="estilo/media-query.css">
+  <!--JavaScript-->
+  <script src="script.js" defer></script>
+  <title>Game Landing Page</title>
+</head>
+<body>
+  <header>
+    <a href="#" class="logo">
+      <img src="images/nintendo-switch.png" alt="logo nintendo" height="60" width="60">
+    </a>
+    <nav class="navbar">
+      <ul>
+        <li>
+          <a href="https://www.nintendo.com/us/whatsnew/" target="_blank">Switch News</a>
+        </li>
+        <li>
+          <a href="https://www.nintendo.com/us/online/" target="_blank">Switch Online</a>
+        </li>
+        <li>
+          <a href="https://www.nintendo.com/us/classic-games/" target="_blank">Switch Classic</a>
+        </li>
+      </ul>
+    </nav>
+    <div class="form-container">
+      <input type="text" id="search" placeholder="Pesquise aqui">
+      <i class='bx bx-search' id="game-search"></i>
+    </div>
+    <div class="login-container">
+      <button onclick="document.getElementById('modal').showModal()">
+        <i class='bx bx-user-circle' ></i>
+      </button>
+    </div>
+  </header>
+  <dialog id="modal">
+    <button onclick="document.getElementById('modal').close()">
+      <i class='bx bx-x'></i>
+    </button>
+    <div class="login-img"></div>
+    <div class="modal-container">
+      <h3>Login</h3>
+      <form class="modal-form">
+        <div class="user-area">
+          <label for="unername">Nome</label>
+          <input type="text" id="unername" placeholder="Digite seu nome de usuário">
+        </div>
+        <div class="password-area">
+          <label for="password">Senha</label>
+          <input type="password" id="password" placeholder="Digite sua senha">
+          <div class="password-services">
+            <div class="remember">
+              <input type="checkbox" id="remember-pass">
+              <label for="remember-pass">Lembrar senha</label>
+            </div>
+            <p>Esqueceu a senha?</p>
+          </div>
+        </div>
+        <div class="entering-area">
+          <button >Entrar</button>
+          <p>Não tem uma conta? <strong>Crie uma</strong></p>
+        </div>
+        <div class="external-login">
+          <p>Entre com</p>
+          <div class="external-icons">
+            <i class='bx bxl-facebook-circle' ></i>
+            <i class='bx bxl-google' ></i>
+            <i class='bx bxl-linkedin' ></i>
+          </div>
+        </div>
+      </form>
+    </div>
+  </dialog>
+  <main class="swiper">
+    <div class="swiper-wrapper">
+      <section class="swiper-slide" id="slide-1">
+        <img src="images/super_mario_odyssey_dinosaur_4k.jpeg" alt="Banner Super Mario">
+        <div class="backscene"></div>
+        <div class="banner">
+          <aside class="left">
+            <div class="features">
+              <div class="rating">
+                <div class="box">
+                  <span class="score">9.3</span>
+                </div>
+                <div class="content">
+                  <span class="subtitle">M E T A S C O R E</span>
+                  <h4>Ótimo</h4>
+                  <span>Descrição</span>
+                </div>
+              </div>
+              <div class="pricing">
+                <div class="box">
+                  <i class='bx bx-cart-add'></i>
+                </div>
+                <div class="content">
+                  <span class="subtitle">Super Mario Odyssey</span>
+                  <h4>Compre agora</h4>
+                  <span>Plataforma, Aventura, Ação</span>
+                </div>
+              </div>
+            </div>
+            <h1>Mario</h1>
+          </aside>
+          <img src="images/mario.png" alt="Mario Image">
+          <aside class="right">
+            <ul class="description">
+              <li>
+                <i class='bx bx-check-circle'></i>
+                <h5>Data de Lançamento</h5>
+                <p>27 de Outubro de 2017</p>
+              </li>
+              <li>
+                <i class='bx bx-check-circle'></i>
+                <h5>Modos de Jogo</h5>
+                <p>Modo TV, Modo Semiportátil, Modo Portátil</p>
+              </li>
+            </ul>
+            <div class="trailer">
+              <h2>Assista ao Trailer</h2>
+              <iframe src="https://www.youtube.com/embed/5kcdRBHM7kM" width="1200" height="720" title="Super Mario Odysey Trailer" allowfullscreen></iframe>
+            </div>
+          </aside>
+        </div>
+      </section>
+      <section class="swiper-slide" id="slide-2">
+        <img src="images/pokemon-legends-arceus.jpeg" alt="Banner Pokemon">
+        <div class="backscene"></div>
+        <div class="banner">
+          <aside class="left">
+            <div class="features">
+              <div class="rating">
+                <div class="box">
+                  <span class="score">8.3</span>
+                </div>
+                <div class="content">
+                  <span class="subtitle">M E T A S C O R E</span>
+                  <h4>Bom</h4>
+                  <span>Descrição</span>
+                </div>
+              </div>
+              <div class="pricing">
+                <div class="box">
+                  <i class='bx bx-cart-add'></i>
+                </div>
+                <div class="content">
+                  <span class="subtitle">Pokemon Legends Arceus</span>
+                  <h4>Compre agora</h4>
+                  <span>Ação, RPG</span>
+                </div>
+              </div>
+            </div>
+            <h1 class="pokemon-title">Pokemon</h1>
+          </aside>
+          <img src="images/red.png" alt="Pokemon trainer Red" class="pokemon">
+          <aside class="right">
+            <ul class="description">
+              <li>
+                <i class='bx bx-check-circle'></i>
+                <h5>Data de Lançamento</h5>
+                <p>28 de Janeiro de 2019</p>
+              </li>
+              <li>
+                <i class='bx bx-check-circle'></i>
+                <h5>Modos de Jogo</h5>
+                <p>Modo TV, Modo Semiportátil, Modo Portátil</p>
+              </li>
+            </ul>
+            <div class="trailer">
+              <h2>Assista ao Trailer</h2>
+              <!--não concegui colocar o trailer dos outros jogos, a conexão com o youtube é restrita neles :( -->
+              <iframe src="https://www.youtube.com/embed/5kcdRBHM7kM" width="1200" height="720" title="Pokemon Legends Arceus trailer" allowfullscreen></iframe>
+            </div>
+          </aside>
+        </div>
+      </section>
+      <section class="swiper-slide" id="slide-3">
+        <img src="images/The-Legend-of-Zelda-Breath-of-the-Wild.jpeg" alt="Banner Legends of Zelda">
+        <div class="backscene"></div>
+        <div class="banner">
+          <aside class="left">
+            <div class="features">
+              <div class="rating">
+                <div class="box">
+                  <span class="score">9.1</span>
+                </div>
+                <div class="content">
+                  <span class="subtitle">M E T A S C O R E</span>
+                  <h4>Ótimo</h4>
+                  <span>Descrição</span>
+                </div>
+              </div>
+              <div class="pricing">
+                <div class="box">
+                  <i class='bx bx-cart-add'></i>
+                </div>
+                <div class="content">
+                  <span class="subtitle">Legends of Zelda</span>
+                  <h4>Compre agora</h4>
+                  <span>Ação, RPG</span>
+                </div>
+              </div>
+            </div>
+            <h1 class="zelda-title">Zelda</h1>
+          </aside>
+          <img src="images/link.png" alt="Zelda Link" class="zelda">
+          <aside class="right">
+            <ul class="description">
+              <li>
+                <i class='bx bx-check-circle'></i>
+                <h5>Data de Lançamento</h5>
+                <p>17 de Outubro de 2015</p>
+              </li>
+              <li>
+                <i class='bx bx-check-circle'></i>
+                <h5>Modos de Jogo</h5>
+                <p>Modo TV, Modo Semiportátil, Modo Portátil</p>
+              </li>
+            </ul>
+            <div class="trailer">
+              <h2>Assista ao Trailer</h2>
+              <iframe src="https://www.youtube.com/embed/5kcdRBHM7kM" width="1200" height="720" title="Legends of Zelda trailer" allowfullscreen></iframe>
+            </div>
+          </aside>
+        </div>
+      </section>
+    </div>
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+  </main>
+</body>
+</html>

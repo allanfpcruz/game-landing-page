@@ -1,0 +1,181 @@
+@media screen and (max-width: 1115px) {
+  header {
+    padding: 20px 50px;
+  }
+
+  header .navbar ul li a {
+    letter-spacing: 1px;
+  }
+
+  .swiper .swiper-wrapper .swiper-slide .banner .left .features .rating .box,
+  .swiper .swiper-wrapper .swiper-slide .banner .left .features .pricing .box {
+    width: 70px;
+    height: 70px;
+  }
+
+  .swiper .swiper-wrapper .swiper-slide .banner .left .features .rating .score,
+  .swiper .swiper-wrapper .swiper-slide .banner .left .features .pricing i {
+    font-size: 2rem;
+  }
+
+  .swiper .swiper-wrapper .swiper-slide .banner .left .features .rating .content h4,
+  .swiper .swiper-wrapper .swiper-slide .banner .left .features .pricing .content h4 {
+    font-size: 1.65rem;
+  }
+
+  .swiper .swiper-wrapper .swiper-slide .banner .right .trailer iframe {
+    width: 320px;
+    height: 176px;
+    margin-top: 40px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  header .navbar ul li a {
+    font-size: 0.85rem;
+  }
+
+  .swiper .swiper-wrapper .swiper-slide .banner .left h1 {
+    font-size: 4.75rem;
+  }
+
+  .swiper .swiper-wrapper .swiper-slide .banner > img {
+    display: none;
+  }
+
+  .swiper .swiper-wrapper .swiper-slide .banner .right .trailer h2 {
+    font-size: 2.75rem;
+  }
+}
+
+@media screen and (max-width: 830px) {
+  header .logo img {
+    width: 20px;
+    height: 50px;
+  }
+
+  header .navbar ul li a {
+    font-size: 0.8rem;
+  }
+
+  header .form-container input {
+    width: 100px;
+  }
+
+  .swiper .swiper-wrapper .swiper-slide .banner .left .features .rating .content h4,
+  .swiper .swiper-wrapper .swiper-slide .banner .left .features .pricing .content h4 {
+    font-size: 1.25rem;
+    letter-spacing: normal;
+  }
+
+  .swiper .swiper-wrapper .swiper-slide .banner .right .trailer iframe {
+    width: 256px;
+    height: 140px;
+    margin-top: 40px;
+  }
+
+  .swiper .swiper-wrapper .swiper-slide .banner .right .trailer h2 {
+    font-size: 2.5rem;
+  }
+
+  .swiper .swiper-wrapper .swiper-slide .banner .right .description {
+    max-width: 250px;
+  }
+}
+
+@media screen and (max-width: 740px) {
+  #modal .login-img {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 728px) {
+  header .form-container input,
+  header .form-container i {
+    display: none;
+  }
+
+  .swiper .swiper-wrapper .swiper-slide .banner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    overflow-y: scroll;
+  }
+
+  .swiper .swiper-wrapper .swiper-slide .banner .left,
+  .swiper .swiper-wrapper .swiper-slide .banner .right {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+  }
+
+  .swiper .swiper-wrapper .swiper-slide .banner .right {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    gap: 50px;
+  }
+
+  .swiper .swiper-wrapper .swiper-slide .banner .right .description {
+    max-width: 100%;
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 30px;
+  }
+
+  .swiper .swiper-wrapper .swiper-slide .banner .right .description li {
+    width: calc(50% - 30px);
+  }
+
+  .swiper .swiper-wrapper .swiper-slide .banner .right .description li i {
+    display: none;
+  }
+
+  .swiper .swiper-wrapper .swiper-slide .banner .left h1 {
+    align-self: center;
+  }
+
+  .swiper .swiper-wrapper .swiper-slide .banner .left h1,
+  .swiper .swiper-wrapper .swiper-slide .banner .right .trailer {
+    order: -1;
+  }
+
+  .swiper .swiper-wrapper .swiper-slide .banner .right .trailer {
+    width: 100%;
+    align-items: center;
+  }
+}
+
+@media screen and (max-width: 635px) {
+  header {
+    padding: 20px 30px;
+  }
+
+  .swiper .swiper-wrapper .swiper-slide .banner {
+    padding: 30px 50px;
+  }
+
+  .swiper .swiper-wrapper .swiper-slide .banner .left {
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+  }
+
+  .swiper .swiper-button-prev,
+  .swiper .swiper-button-next {
+    width: 40px;
+    height: 40px;
+    font-size: 1.5rem;
+  }
+
+  #modal {
+    max-width: 500px;
+  }
+
+  #modal .modal-container form {
+    padding: 0;
+    width: 100%;
+  }
+}
